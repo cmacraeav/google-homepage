@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F7F7F7;
+    font-family: Helvetica, sans-serif;
+    color: #252525;
+    padding: 12px;
+    font-size: 14px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    ;
+}
+
+header nav p span {
+    font-family: 'Material Icons';
+    font-size: 38px;
+}
