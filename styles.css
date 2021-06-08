@@ -8,8 +8,16 @@ body {
     background: #F7F7F7;
     font-family: Helvetica, sans-serif;
     color: #353535;
-    padding: 12px;
     font-size: 14px;
+    max-width: 1480px;
+}
+
+.container {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 12px;
 }
 
 header {
@@ -18,7 +26,7 @@ header {
     justify-content: space-between;
 }
 
-#navleft, #navright {
+#navleft, #navright, #bottomnav {
     display: flex;
     flex-direction: row;
     max-width: 50%;
@@ -41,14 +49,11 @@ header nav p .user-icon {
 }
 
 main {
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*padding-top: 125px;
-    padding-bottom: 125px; */
-    min-height: 75vh;
-    width: 100%;
 }
 
 main #google-logo, main .search-form, main .search-options {
@@ -81,7 +86,7 @@ main .search-form {
     padding: 6px;
     border-radius: 2px;
     color: #555555;
-    min-width: 48vh;
+    min-width: 35vw;
     outline: none;
     border-radius: 50px;
 }
@@ -104,6 +109,14 @@ main .search-form {
 
 .search-options {
     display: flex;
-    min-width: 48vh;
+    min-width: 48vw;
     justify-content: space-around;
+}
+
+footer {
+    min-height: 50px;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
 }
