@@ -1,0 +1,1 @@
+This is an introductory lesson to (re)building a webpage, such as the Google homepage, to become more familiar with HTML elements and how we can use CSS to control visuals and layout.
