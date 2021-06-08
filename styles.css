@@ -7,7 +7,7 @@
 body {
     background: #F7F7F7;
     font-family: Helvetica, sans-serif;
-    color: #252525;
+    color: #353535;
     padding: 12px;
     font-size: 14px;
 }
@@ -15,10 +15,95 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    ;
+    justify-content: space-between;
+}
+
+#navleft, #navright {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    align-items: center;
+    padding: 4px;
+}
+
+nav p {
+    margin-right: 14px;
 }
 
 header nav p span {
     font-family: 'Material Icons';
-    font-size: 38px;
+    font-size: 24px;
+    padding: 2px;
+}
+
+header nav p .user-icon {
+    font-size: 36px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*padding-top: 125px;
+    padding-bottom: 125px; */
+    min-height: 75vh;
+    width: 100%;
+}
+
+main #google-logo, main .search-form, main .search-options {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+main .search-form {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #E5E5E5;
+    padding: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.search-form form {
+    margin-block-end: 0em;
+}
+
+.search-form form input {
+    border: none;
+    background-color: inherit;
+    font: inherit;
+    /* border: .5px #F3F3F3 solid; */
+    font-size: 16px;
+    line-height: 22px;
+    padding: 6px;
+    border-radius: 2px;
+    color: #555555;
+    min-width: 48vh;
+    outline: none;
+    border-radius: 50px;
+}
+
+.search-form form input:focus {
+    /* box-shadow: #EAEAEA 1px 1px 1px 1px; */
+    background-color: #F3F3F3;
+    border: .5px #F3F3F3 solid;
+}
+
+.search-form .material-icons {
+    font-size: 20px;
+    color: #999;
+}
+
+.search-form .mic {
+    color: #4285F4;
+    font-size: 28px;
+}
+
+.search-options {
+    display: flex;
+    min-width: 48vh;
+    justify-content: space-around;
 }
